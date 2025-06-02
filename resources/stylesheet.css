@@ -1,0 +1,380 @@
+/* CSS Styles */
+
+html{
+  scroll-padding-top: 150px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;          
+  height: 100px;        
+  background-color: #1B2B40;
+  z-index: 1000;        
+  border: solid 2px #0d141e;
+}
+
+ul {
+  margin: 20px auto;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+li {
+  font-family: 'Roboto', sans-serif;
+  color: white; 
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px;
+  display: inline;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #BF738F;
+  font-size: 40px;
+  margin-bottom: 0px;
+} 
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #5B7BA6;
+  font-size: 35px;
+} 
+
+body {
+  margin: 0;
+  padding-top: 130px; /* match header height */
+  background: #EDEDED;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #1B2B40;
+  font-size: 20px;
+}
+
+
+/* Links */
+a {
+    color: #BF738F;
+}
+
+a:hover {
+  text-decoration: none;
+  color:#82A8D9;
+} 
+
+a:active {
+  color: #F2778D;
+}
+
+
+/* Navigation  */
+
+header a.tag {
+  color: white;
+  text-decoration: none;
+}
+
+header a.tag:hover {
+  color: #82A8D9;
+}
+
+
+/* Banner */
+
+.banner {
+  width: 100%;
+  height: 140px;
+  position: relative;
+  top: 20px;
+} 
+
+.banner #greeting {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.banner #checkout {
+  text-align: center;
+}
+
+
+/* Dividing Line  */
+
+.divide {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.line {
+  height: 4px;
+  background-color: #82A8D9;
+  margin: auto;
+  width: 70%;
+}
+
+/* Containers */
+
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+
+/* Color Palette Section */
+
+.palette {
+  padding: 10px;
+  color: #fff;
+}
+
+.palette::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.colorboxes {
+  float: left;
+  margin: 20px 50px 20px 0px;
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.colorboxes:hover {
+  width: 480px;
+  height: 280px;
+  z-index: 15;
+}
+
+.colorboxes p {
+    color: white;
+}
+
+.dark-green {
+  background-color: #003840;
+}
+
+.mid-green {
+  background-color: #005A5B;
+}
+
+.green {
+  background-color: #008C72;
+}
+
+.light-green {
+  background-color: #02A676;
+}
+
+.palette p {
+  font-size: 30px;
+  text-align: center;
+  padding: 55px;
+}
+
+.table {
+  color: #1B2B40;
+  font-size:20px;
+  line-height: normal;
+  margin: 80px 0px 6px 00px;
+}
+
+
+/* Typography Section */
+
+.typography {
+  color: #1B2B40;
+  font-size:20px;
+  line-height: normal;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  padding: 5px 0;
+}
+
+.typography-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 40px; 
+}
+
+.typography-list li {
+  margin: 0;
+  padding: 2px 0; 
+  font-family: 'Roboto', sans-serif;
+  color: #1B2B40;
+  font-weight: 500;
+  font-size: 20px;
+  display: list-item;
+  text-align: left;
+}
+
+
+/* UX Design Section */
+
+button {
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 10px 20px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 20%;
+}
+
+
+/* Flat Button */
+
+.flat {
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 2px solid #5B7BA6;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+  color: #F2778D;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
+
+/* Shadow Button */
+
+.shadow {
+  align-items: center;
+  background-color: #82A8D9;
+  border: 2px solid #5B7BA6;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 18px;
+  padding: 0 25px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
+.shadow:after {
+  background-color: #1B2B40;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.shadow:hover:after {
+  transform: translate(0, 0);
+}
+
+
+/* Hover Button */
+.hover {
+  appearance: none;
+  background-color: hsla(214, 53%, 68%, 0.6);
+  border-style: none;
+  box-shadow: #5B7BA6  0 -12px 6px inset;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
+.hover:hover {
+  background-color: #1B2B40;
+  box-shadow: #5B7BA6 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-group {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+
+/* Footer  */
+footer.footer-box {
+  width: 100%;
+  background-color: #F2778D;
+  position: relative;
+  border-radius: 10px;
+  height: 120px;
+  margin-top: 60px;
+}
+
+.footer-inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.footer-text {
+  flex: 1; /* Removes all space not used by the logo */
+  text-align: center; 
+}
+
+.footer-text h2,
+.footer-text p {
+  margin: 5px 0;
+  color:#1B2B40;
+}
+
+
+/* GitHub icon */
+.github {
+  height: 50px;
+  width: 100px;
+  padding-right: 0;
+}
+
+.github:hover {
+  color:#82A8D9;
+}
