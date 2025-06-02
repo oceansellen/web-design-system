@@ -364,17 +364,17 @@ footer.footer-box {
 .footer-text h2,
 .footer-text p {
   margin: 5px 0;
-  color:#1B2B40;
+  color: #1B2B40;
 }
 
 
 /* GitHub icon */
 .github {
   height: 50px;
-  width: 80px;
+  width: 50px;
   padding-right: 0;
 }
 
 .github:hover {
-  color:#82A8D9;
+  color: #82A8D9;
 }
